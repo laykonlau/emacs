@@ -216,7 +216,7 @@
 (use-package keycast
   :commands keycast-mode)
 
-
+(use-package info-colors
   :unless *is-windows*
   :hook (Info-selection . info-colors-fontify-node))
 
