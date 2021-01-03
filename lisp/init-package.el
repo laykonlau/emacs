@@ -242,5 +242,6 @@
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/"))
+（require 'xcscope)
 
 (provide 'init-package)

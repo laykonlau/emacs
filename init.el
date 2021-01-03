@@ -8,6 +8,15 @@
 (add-to-list 'load-path (expand-file-name (concat user-emacs-directory "lisp/")))
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
+;; laykon added
+;; xcscope
+(setq cscope-option-use-inverted-index t)
+(setq cscope-option-do-not-update-database t)
+(add-to-list 'load-path' "/home/laykon/.emacs.d/elpa/xcscope-20201025.2002")
+(require 'xcscope)
+(cscope-setup)
+(global-linum-mode t)
+
 (require 'init-consts)
 (require 'init-startup)
 (require 'init-elpa)
